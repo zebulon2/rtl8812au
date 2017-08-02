@@ -409,6 +409,12 @@ uint rtw_notch_filter = RTW_NOTCH_FILTER;
 module_param(rtw_notch_filter, uint, 0644);
 MODULE_PARM_DESC(rtw_notch_filter, "0:Disable, 1:Enable, 2:Enable only for P2P");
 
+#ifdef CONFIG_SW_LED
+int rtw_led_enable = 1;
+module_param(rtw_led_enable, int, 0644);
+MODULE_PARM_DESC(rtw_led_enable,"Enable status LED");
+#endif //CONFIG_SW_LED
+
 uint rtw_hiq_filter = CONFIG_RTW_HIQ_FILTER;
 module_param(rtw_hiq_filter, uint, 0644);
 MODULE_PARM_DESC(rtw_hiq_filter, "0:allow all, 1:allow special, 2:deny all");
@@ -913,6 +919,9 @@ uint loadparam(_adapter *padapter)
 	registry_par->trx_share_mode = rtw_trx_share_mode;
 #endif
 
+#ifdef CONFIG_SW_LED
+       registry_par->led_enable = (u8)rtw_led_enable;
+#endif //CONFIG_SW_LED
 
 	return status;
 }

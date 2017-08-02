@@ -397,6 +397,9 @@ struct registry_priv {
 	u8 trx_share_mode;
 #endif
 	u8 check_hw_status;
+#ifdef CONFIG_SW_LED
+        u8 led_enable;
+#endif
 };
 
 /* For registry parameters */
