@@ -198,6 +198,7 @@ static struct usb_device_id rtw_usb_id_tbl[] = {
 	{USB_DEVICE(0x0846, 0x9052), .driver_info = RTL8821}, /* Netgear - A6100 */
 	/*=== Patched ID ===*/
 	{USB_DEVICE(0x056e, 0x4007),.driver_info = RTL8821}, /* Elecom - WDC-433DU2HBK */
+	{USB_DEVICE(0x0BDA, 0xA811),.driver_info = RTL8821}, /* Comfast - CF-915AC */	
 #endif
 
 #ifdef CONFIG_RTL8192E
