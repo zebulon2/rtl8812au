@@ -204,6 +204,7 @@ static struct usb_device_id rtw_usb_id_tbl[] = {
 	/*=== Patched ID ===*/
 	{USB_DEVICE(0x056e, 0x4007),.driver_info = RTL8821}, /* Elecom - WDC-433DU2HBK */
 	{USB_DEVICE(0x0BDA, 0xA811),.driver_info = RTL8821}, /* Comfast - CF-915AC */	
+	{USB_DEVICE(0x0411, 0x029b),.driver_info = RTL8821}, /* Buffalo - WI-U2-433DHP */
 #endif
 
 #ifdef CONFIG_RTL8192E
