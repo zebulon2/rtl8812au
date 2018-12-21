@@ -1,0 +1,4 @@
+# For git archive
+README.md       export-ignore
+dkms_*.sh       export-ignore
+*               core.eol=auto
