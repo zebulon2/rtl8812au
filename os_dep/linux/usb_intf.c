@@ -177,6 +177,7 @@ static struct usb_device_id rtw_usb_id_tbl[] = {
 	{USB_DEVICE(0x20f4, 0x805B), .driver_info = RTL8812}, /* TRENDnet - */
 	{USB_DEVICE(0x0411, 0x025d), .driver_info = RTL8812}, /* Buffalo - WI-U3-866D */
 	{USB_DEVICE(0x050D, 0x1109), .driver_info = RTL8812}, /* Belkin F9L1109 - SerComm */
+	{USB_DEVICE(0x2604, 0x0012), .driver_info = RTL8812}, /* Tenda U12 */
 	/*=== Patched ID ===*/
 	{USB_DEVICE(0x148F, 0x9097), .driver_info = RTL8812}, /* Amped Wireless ACA1 */
 #endif
